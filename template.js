@@ -93,3 +93,66 @@ multiple comments
 // const userData=prompt("Lütfen adınızı giriniz");
 // console.log(userData);
 
+// // Math
+// console.log(Math.PI);
+// console.log(Math.E);
+// console.log(Math.sqrt(25));
+// console.log(Math.abs(-25));
+// console.log(Math.floor(25.7));
+// console.log(Math.ceil(25.7));
+// console.log(Math.round(25.7));
+// console.log(Math.asin(-1));
+// console.log(Math.cos(-1));
+// console.log(Math.tan(-1));
+
+// // Espace Characters
+// console.log("\u00A9");
+// console.log("\u00AE");
+// console.log("\u2122");
+
+// TypeOf
+let data = 44;
+console.log(typeof number); // number
+let name="YTT";
+console.log(typeof name); // string
+let isLogin=true; 
+console.log(typeof isLogin); // boolean
+
+// InstanceOf
+let obj = {name: "YTT"};
+console.log(obj instanceof Object); // true
+
+// New : Doğdu
+
+let numb = new Number(42);
+console.log(numb);
+// Null : Vefat
+numb =null;
+console.log(numb);
+
+// undefined
+let dataNumber;
+dataNumber =0;
+console.log(dataNumber);
+
+// NaN
+let result=10/10;
+console.log(result);
+
+let result2=10/"10";
+console.log(result2);
+
+let result3=10/"abc";
+console.log(result3);
+console.log(isNaN(result3));
+console.log(!isNaN(result3));
+
+// hoisting
+dataNumber2=55;
+var dataNumber2;
+console.log(dataNumber2);
+
+
+
+
+
