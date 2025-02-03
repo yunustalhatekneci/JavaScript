@@ -110,47 +110,68 @@ multiple comments
 // console.log("\u00AE");
 // console.log("\u2122");
 
-// TypeOf
-let data = 44;
-console.log(typeof number); // number
-let name="YTT";
-console.log(typeof name); // string
-let isLogin=true; 
-console.log(typeof isLogin); // boolean
+// // TypeOf
+// let data = 44;
+// console.log(typeof number); // number
+// let name="YTT";
+// console.log(typeof name); // string
+// let isLogin=true; 
+// console.log(typeof isLogin); // boolean
 
-// InstanceOf
-let obj = {name: "YTT"};
-console.log(obj instanceof Object); // true
+// // InstanceOf
+// let obj = {name: "YTT"};
+// console.log(obj instanceof Object); // true
 
-// New : Doğdu
+// // New : Doğdu
 
-let numb = new Number(42);
-console.log(numb);
-// Null : Vefat
-numb =null;
-console.log(numb);
+// let numb = new Number(42);
+// console.log(numb);
+// // Null : Vefat
+// numb =null;
+// console.log(numb);
 
-// undefined
-let dataNumber;
-dataNumber =0;
-console.log(dataNumber);
+// // undefined
+// let dataNumber;
+// dataNumber =0;
+// console.log(dataNumber);
 
-// NaN
-let result=10/10;
-console.log(result);
+// // NaN
+// let result=10/10;
+// console.log(result);
 
-let result2=10/"10";
-console.log(result2);
+// let result2=10/"10";
+// console.log(result2);
 
-let result3=10/"abc";
-console.log(result3);
-console.log(isNaN(result3));
-console.log(!isNaN(result3));
+// let result3=10/"abc";
+// console.log(result3);
+// console.log(isNaN(result3));
+// console.log(!isNaN(result3));
 
-// hoisting
-dataNumber2=55;
-var dataNumber2;
-console.log(dataNumber2);
+// // hoisting
+// dataNumber2=55;
+// var dataNumber2;
+// console.log(dataNumber2);
+
+
+// Sayılsal İşlermler
+let numb1=10;
+let numb2="20";
+console.log(numb1+numb2); // 30
+console.log(Number(numb1)+Number(numb2)); // 30
+console.log(String(numb1)+String(numb2)); // 1020
+
+// Sayılsal İşlermler(cast)
+let numb3=10;
+let numb4="20";
+console.log(numb3+Number(numb4)); // 30
+console.log(Number(numb3)+parseFloat(numb4)); // 30.0
+console.log(parseFloat(numb3)+parseFloat(numb4)); // 30.0
+console.log(parseInt(numb3)+parseInt(numb4)); // 30
+
+// toFixed
+const sayi=56.123234346;
+console.log(sayi.toFixed(2)); // 56.12
+console.log(sayi.toPrecision(4));
 
 
 
