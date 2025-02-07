@@ -153,27 +153,90 @@ multiple comments
 // console.log(dataNumber2);
 
 
-// Sayılsal İşlermler
-let numb1=10;
-let numb2="20";
-console.log(numb1+numb2); // 30
-console.log(Number(numb1)+Number(numb2)); // 30
-console.log(String(numb1)+String(numb2)); // 1020
+// // Sayılsal İşlermler
+// let numb1=10;
+// let numb2="20";
+// console.log(numb1+numb2); // 30
+// console.log(Number(numb1)+Number(numb2)); // 30
+// console.log(String(numb1)+String(numb2)); // 1020
 
-// Sayılsal İşlermler(cast)
-let numb3=10;
-let numb4="20";
-console.log(numb3+Number(numb4)); // 30
-console.log(Number(numb3)+parseFloat(numb4)); // 30.0
-console.log(parseFloat(numb3)+parseFloat(numb4)); // 30.0
-console.log(parseInt(numb3)+parseInt(numb4)); // 30
+// // Sayılsal İşlermler(cast)
+// let numb3=10;
+// let numb4="20";
+// console.log(numb3+Number(numb4)); // 30
+// console.log(Number(numb3)+parseFloat(numb4)); // 30.0
+// console.log(parseFloat(numb3)+parseFloat(numb4)); // 30.0
+// console.log(parseInt(numb3)+parseInt(numb4)); // 30
 
-// toFixed
-const sayi=56.123234346;
-console.log(sayi.toFixed(2)); // 56.12
-console.log(sayi.toPrecision(4));
+// // toFixed
+// const sayi=56.123234346;
+// console.log(sayi.toFixed(2)); // 56.12
+// console.log(sayi.toPrecision(4));
+
+// Metinsel İşlemler
+// let yttMetinsel = "   Javascript öğreniyorum javascript";
+// let yttMetinsel2 = " html5, css3, js";
+// console.log(yttMetinsel);
+// console.log(yttMetinsel.length); // 33
+// console.log(yttMetinsel.trim().length);
+// console.log(yttMetinsel.toUpperCase()); // JAVASCRIPT Ö��RENİYORUM JAVASCRIPT
+// console.log(yttMetinsel.toLowerCase()); // javascript öğreniyorum javascript
+// console.log(yttMetinsel.indexOf("javascript")); // JAVASCRIPT
+// console.log(yttMetinsel.lastIndexOf("javascript")); // 19
+// console.log(yttMetinsel.includes("javascript"));
+
+// console.log(yttMetinsel+" " +yttMetinsel2+yttMetinsel);
+// console.log(yttMetinsel.concat(yttMetinsel2));
+// console.log(yttMetinsel.substring(3));
+// console.log(yttMetinsel.substring(0,3));
+
+// // 1-Returnsuz parametresiz
+// function returnsuzParametresiz(){
+//     console.log("Parametresiz fonksiyon çağrısı");
+// }
+// returnsuzParametresiz();
+
+// // 2-Returnsuz parametreli
+// function reurnsuzParametreli(kelime, number){  
+//     console.log("Parametreli fonksiyon çağrısı"+" " +kelime+ " "+number);
+// }
+// reurnsuzParametreli("YTT", 24);
+
+// // 3-Parametreli ve return eden
+// function parametreliVeReturnEden(kelime, number){
+//     return kelime+ " "+number;
+// }
+// console.log(parametreliVeReturnEden("YTT", 24));
+
+// // 4- Parametresiz ve return eden (default değerli)
+// function parametresizVeReturnEdenDefault(kelime="YTT", number=24){
+//     return kelime+ " "+number;
+// }
+// console.log(parametresizVeReturnEdenDefault());
 
 
 
 
+// Exception Handling
+const exceptionHandling = () => {
+     // const result=10/0;
+    
+    try{
+        alertx("Alert");
+        
 
+    }catch(err){
+        console.error(err);
+    } finally{
+        console.warn("Burası mutlaka çalışmalıdır");
+
+    }
+    console.log("Merhaba-1");
+
+    
+    throw new Error("Neden sayıyı sıfıra böldün");
+    console.log("Merhaba-2");
+
+
+}
+exceptionHandling()
