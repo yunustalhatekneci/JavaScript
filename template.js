@@ -218,25 +218,40 @@ multiple comments
 
 
 // Exception Handling
-const exceptionHandling = () => {
-     // const result=10/0;
+// const exceptionHandling = () => {
+//      // const result=10/0;
     
-    try{
-        alertx("Alert");
+//     try{
+//         alertx("Alert");
         
 
-    }catch(err){
-        console.error(err);
-    } finally{
-        console.warn("Burası mutlaka çalışmalıdır");
+//     }catch(err){
+//         console.error(err);
+//     } finally{
+//         console.warn("Burası mutlaka çalışmalıdır");
+
+//     }
+//     console.log("Merhaba-1");
+
+
+//     throw new Error("Neden sayıyı sıfıra böldün");
+//     console.log("Merhaba-2");
+
+
+// }
+
+// exceptionHandling()
+// Debug
+
+const debugData = () => {
+    let value = "YTT";
+    for(let i=0; i<10; i++){
+        console.log(value + " "+i);
+
+        if(i==4){
+            debugger;
+        }
 
     }
-    console.log("Merhaba-1");
-
-    
-    throw new Error("Neden sayıyı sıfıra böldün");
-    console.log("Merhaba-2");
-
-
 }
-exceptionHandling()
+debugData();
