@@ -254,4 +254,114 @@ const debugData = () => {
 
     }
 }
-debugData();
+// debugData();
+
+// SetTimeout
+const setTimeoutFunction = () => {
+
+// Arrow Function
+ setTimeout(() => {
+    console.log("2 saniye sonra çalış ve dur");
+    
+}, 2000);
+// Anonymus Function
+setTimeout(function() {
+    console.log("2 saniye sonra çalış ve dur");
+}, 2000);
+}
+// setTimeoutFunction();
+
+const setIntervalFunction = () => {
+
+    // Arrow Function
+    // setInterval(() => {
+    //     console.log("2 saniye sonra çalış ve devam et");
+    //      }, 1500);
+
+    // Anonymus Function
+    setInterval(function() {
+        console.log("2 saniye sonra çalış ve devam et");
+        }, 1500);
+    }
+    // setIntervalFunction()
+    
+    const setIntervalFunction2 = () => {
+
+              // Arrow Function
+        let clockTime=() => {
+            console.log("1 saniye çalışsın");
+        }
+        let intervalID=    setInterval(clockTime, 1000);
+        setTimeout(() => {
+            clearInterval(intervalID);
+            console.log("5 saniye sonra dur");
+            
+        }, 5000);
+        }
+        //  setIntervalFunction2();
+
+        // Monad
+        const monad = () => {
+        const data1=(number) => {
+            return Math.sqrt(number);
+        }    
+        const data2=(number) => {
+            return Math.pow(number,3);
+        }
+       let result= data2(data1(25));
+       console.log(result);  
+    }
+    // monad()
+
+        // Senkron ve Asenkron
+        // Callback Function
+        const callbackFunction = () => {
+            const data1 = (number, callback) => {
+                setTimeout(() => {
+                    callback(number);
+                }, 2000);
+            }
+            const data2 = (number, callback) => {
+                setTimeout(() => {
+                    callback(number);
+                }, 1000);
+            }
+            data1(10, (number1) => {
+                console.log("data 1 " +number1);
+                data2(number1, (number2) => {
+                    console.log("data 2 " +number2);
+                })
+
+        })
+    }
+        // callbackFunction()
+
+        const promiseFunction = () => {
+
+            function data1(number) {
+                const isLogin=false;
+                // resolve=başarılıysa
+                // reject=hatalıysa
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        if(isLogin){
+                            console.log(number + " Promise çalıştı");
+                            resolve(number);
+                        }else{
+                            reject("Promise çalışmadı");
+                        }
+                    }, 2000);
+                }
+            )
+                
+            }
+            let result = data1(10);
+            console.log(result);
+            
+
+        }
+promiseFunction()
+
+
+
+
