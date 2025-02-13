@@ -360,7 +360,46 @@ const setIntervalFunction = () => {
             
 
         }
-promiseFunction()
+// promiseFunction()
+
+        // asyncAwaitFunction
+
+        const asyncAwaitFunction = () => {
+            function promiseFunction(number) {
+                const isLogin = true;
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        if (isLogin) {
+                            console.log(number + " Promise çalıştı");
+                            resolve(number);
+                        } else {
+                            reject("Promise çalışmadı");
+                        }
+                    }, 2000);
+                }).then((response) => {
+                    console.log("Response : " + response);
+                }).catch((err) => {
+                    console.error(err);
+                });
+            }
+        
+            // asyncAwaitData function
+            let asyncAwaitData = async () => {
+                try {
+                    let asynData = await promiseFunction(44);
+                    console.log(asynData);
+                } catch (err) {
+                    console.error(err);
+                }
+            };
+        
+            asyncAwaitData();
+        };
+        
+        asyncAwaitFunction();
+        
+
+
 
 
 
