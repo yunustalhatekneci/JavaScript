@@ -488,5 +488,28 @@ return array;
 
     }
   
-arrayMethod()
+// arrayMethod()
 
+const arrayMethod2 = () => {
+ let array = arrayDataSet();
+ for(let data of array){
+     document.writeln(data);
+ }
+ document.writeln("<br/>********<br/>");
+array.sort();
+for(let data of array){
+    document.writeln(data);
+
+}
+document.writeln("<br/>********<br/>");
+array.reverse();
+for(let data of array){
+    document.writeln(data);
+
+}
+document.writeln("<br/>********<br/>");
+array.sort().reverse().forEach((response) => {
+    document.writeln(response);
+});
+}
+arrayMethod2();
