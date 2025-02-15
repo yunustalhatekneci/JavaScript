@@ -418,12 +418,12 @@ const setIntervalFunction = () => {
         }
 // arrayFunction()
 
- 
+//  Array Data Set
  const arrayDataSet = () => {
     let array = [9,1,2,6,3,5,4];
 return array;
     }
-    
+
 
 
 // Diziler Döngüler
@@ -445,8 +445,48 @@ return array;
             document.writeln(data2);
         }
     }
-     arrayLoop()
+    //  arrayLoop()
 
+    // push, unshift, pop, shift, delete
+    const arrayMethod = () => {
+        let array = arrayDataSet();
+        for(let data of array){
+            document.writeln(data);
+        }
 
+    document.writeln("<br/>********<br/>");
+    array.push(10, 54);
+     for(let data of array){
+        document.writeln(data);
+        
+     }
+     document.writeln("<br/>********<br/>");
+ 
+     array.unshift(11, 53);
+     for(let data of array){
+        document.writeln(data);
+     }
+     document.writeln("<br/>********<br/>");
+ 
+     array.pop();
+     for(let data of array){
+        document.writeln(data);
+     }
+     document.writeln("<br/>********<br/>");
+ 
+     array.shift();
+     for(let data of array){
+        document.writeln(data);
+     }
+     document.writeln("<br/>********<br/>");
+ 
+     delete array[0];
+     delete array[1];
+     for(let data of array){
+        document.writeln(data);
+     }
 
+    }
+  
+arrayMethod()
 
