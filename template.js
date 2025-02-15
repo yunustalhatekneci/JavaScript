@@ -396,10 +396,56 @@ const setIntervalFunction = () => {
             asyncAwaitData();
         };
         
-        asyncAwaitFunction();
-        
+        // asyncAwaitFunction();
+
+        // diziler
+        const arrayFunction = () => {
+        let array=[1,2,3,4,5];
+        array[5]=6;
+        array[6]=9;
+        //  console.log(array);
+         document.writeln(array);
+         document.writeln("<br/>");
+         document.writeln(array[0]);
+         document.writeln(array[7]);
+         document.writeln("<br/>");
+         document.writeln("Lenght : "+array.length);
+         document.writeln("<br/>");
+         document.writeln(array[array.length-1]);
 
 
+
+        }
+// arrayFunction()
+
+ 
+ const arrayDataSet = () => {
+    let array = [9,1,2,6,3,5,4];
+return array;
+    }
+    
+
+
+// Diziler Döngüler
+    const arrayLoop = () => {
+        let array = arrayDataSet();
+        // iterative for
+        for(let i=0; i<array.length; i++){
+            document.writeln(array[i]);
+        }
+        document.writeln("<br/>********<br/>");
+
+        // for in
+        for(let data1 in array){
+            document.writeln(array[data1]);
+        }
+        document.writeln("<br/>********<br/>");
+        // for of
+        for(let data2 of array){
+            document.writeln(data2);
+        }
+    }
+     arrayLoop()
 
 
 
