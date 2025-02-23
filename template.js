@@ -668,7 +668,7 @@ const callYtt = () => {
     }
     yttFunction.call(yttObj, "YTT");
 }
-callYtt()
+// callYtt()
 
 //Apply
 const applyYtt = () => {
@@ -681,7 +681,7 @@ const applyYtt = () => {
     }
     yttFunction.apply(yttObj, ["YTT dizi"]);
 }
-applyYtt()
+// applyYtt()
 
 //Bind
 const bindYtt = () => {
@@ -694,4 +694,22 @@ const bindYtt = () => {
     let yttBind = yttFunction.bind(yttObj);
     yttBind("YTT bind");
 }
-bindYtt()
+// bindYtt()
+
+// Event
+let yttoOnClick = () => {
+    alert("1 kere tıkladınız")
+}
+let yttDblClick = () => {
+    alert("2 kere tıkladınız")
+    console.log("YTT DblClick");
+    }
+let onmousewheelClick = () => {
+    alert("Mouse Wheel");
+}
+let onkeydownClick = () => {
+    alert("Key Down");
+    }
+let onkeyupClick = () => {
+    alert("Key Up");
+    }
