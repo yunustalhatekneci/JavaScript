@@ -602,4 +602,37 @@ const data1= () => {
     let multilineYTT3 = "<ul>Merhabalar</ul> ";
     console.log(multilineYTT3);
 }
-data1();
+// data1();
+
+// Object
+const data2 = () => {
+    const YttFrontend = {
+        name: "YTT",
+        age: 24,
+        city: "Istanbul",
+        isLogin: true,
+        start: function(){
+            let data= `${this.name} ${this.age} ${this.city}`;
+             console.log(data);
+        }
+    };
+    console.log(YttFrontend);
+    console.log(YttFrontend.name);
+    console.log(YttFrontend.age);
+    console.log(YttFrontend.city.toUpperCase());
+    if(YttFrontend.isLogin)
+        console.log("YTT Frontend Giriş Yaptı");
+    else
+        console.log("YTT Frontend Giriş Yapmadı");
+    YttFrontend.start();
+    YttFrontend["start"]();
+    YttFrontend.frontend = {
+        name: "YTT",
+        age: 24,
+    }
+    console.log(YttFrontend.frontend);
+    console.log(YttFrontend.frontend.name);
+}
+    data2();
+
+
