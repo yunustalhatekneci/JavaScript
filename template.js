@@ -713,3 +713,12 @@ let onkeydownClick = () => {
 let onkeyupClick = () => {
     alert("Key Up");
     }
+
+// Add Event Listener
+let addEventListenerYtt = () => {
+    console.log("YTT Add Event Listener");
+
+    let buttonId=document.getElementById("addEventYtt");
+    buttonId.addEventListener("mouseleave", yttoOnClick);
+}
+addEventListenerYtt()
