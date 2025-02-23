@@ -553,4 +553,36 @@ array.sort().reverse().forEach((response) => {
         document.writeln(response);
     })
 }
-    arrayMethod3();
+    // arrayMethod3();
+
+    // Map, filter, forEach
+    const arrayMethod4 = () => {
+        let array = arrayDataSet();
+        let cloneArray=array;
+        cloneArray.forEach((response) => {
+            document.writeln(response);
+            });
+            document.writeln("<br/>********<br/>");
+            let filterYttNumbers = cloneArray.filter((response) => {
+                return response>4;
+            }
+            );
+            filterYttNumbers.forEach((response) => {
+                document.writeln(response);
+            });
+            document.writeln("<br/>********<br/>");
+            let mapYttNumbers = cloneArray.map((response) => {
+                return response*2;
+            }
+            );
+            mapYttNumbers.forEach((response) => {
+                document.writeln(response);
+            });
+            document.writeln("<br/>********<br/>");
+            cloneArray.forEach((response) => {
+                document.writeln(response);
+            });
+
+
+    }
+    arrayMethod4()
