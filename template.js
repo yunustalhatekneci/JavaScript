@@ -633,6 +633,27 @@ const data2 = () => {
     console.log(YttFrontend.frontend);
     console.log(YttFrontend.frontend.name);
 }
-    data2();
+    // data2();
 
+    // Stringfy
+const data3 = () => {
+    const YttFrontend = {
+        name: "YTT",
+        age: 24,
+        city: "Istanbul",
+        isLogin: true,
+    };
+    // stringe çevirdim
+    let jsonString=JSON.stringify(YttFrontend);
+    // jsonString=jsonString.toUpperCase();
+      console.log(jsonString);
+
+    // Parse
+    let ytt = JSON.parse(jsonString);
+    console.log(ytt);
+    console.log(ytt.name);
+    console.log(ytt.age);
+    console.log(ytt.city);
+}
+data3()
 
