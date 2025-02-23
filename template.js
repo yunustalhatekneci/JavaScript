@@ -655,5 +655,43 @@ const data3 = () => {
     console.log(ytt.age);
     console.log(ytt.city);
 }
-data3()
+// data3()
 
+//Call
+const callYtt = () => {
+
+    function yttFunction(data){
+        console.log("call " + data + " " + this.name);
+    }
+    let yttObj = {
+        name: "YTT"
+    }
+    yttFunction.call(yttObj, "YTT");
+}
+callYtt()
+
+//Apply
+const applyYtt = () => {
+
+    function yttFunction(data){
+        console.log("Apply " + data + " " + this.name);
+    }
+    let yttObj = {
+        name: "YTT"
+    }
+    yttFunction.apply(yttObj, ["YTT dizi"]);
+}
+applyYtt()
+
+//Bind
+const bindYtt = () => {
+    function yttFunction(data){
+        console.log("Bind " + data + " " + this.name);
+    }
+    let yttObj = {
+        name: "YTT"
+    }
+    let yttBind = yttFunction.bind(yttObj);
+    yttBind("YTT bind");
+}
+bindYtt()
