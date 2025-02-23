@@ -585,4 +585,21 @@ array.sort().reverse().forEach((response) => {
 
 
     }
-    arrayMethod4()
+    // arrayMethod4()
+
+// multiline
+const data1= () => {
+    let multilineYTT = `Merhaba
+    YTT
+    JS`;
+    console.log(multilineYTT);
+    // Interpolation
+    let name="YTT";
+    let age=24;
+    let multilineYTT2 = `Merhaba ${name} ${age}`;
+    console.log(multilineYTT2);
+    // HTML tamplate
+    let multilineYTT3 = "<ul>Merhabalar</ul> ";
+    console.log(multilineYTT3);
+}
+data1();
