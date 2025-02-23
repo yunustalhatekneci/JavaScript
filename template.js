@@ -512,4 +512,45 @@ array.sort().reverse().forEach((response) => {
     document.writeln(response);
 });
 }
-arrayMethod2();
+// arrayMethod2();
+
+   // splice, slice
+   const arrayMethod3 = () => {
+    let array = arrayDataSet();
+    let cloneArray=array;
+    cloneArray.forEach((response) => {
+        document.writeln(response);
+    });
+    document.writeln("<br/>********<br/>");
+
+    // Splice(çıkarma)
+    // 3: başlangıç indis
+    // 2: kaç eleman silinecek
+    cloneArray.splice(3,2)
+    cloneArray.forEach((response) => {
+        document.writeln(response);
+    });
+    document.writeln("<br/>********<br/>");
+
+    // Splice(ekleme)
+    // 1: başlangıç indis
+    // 0: eleman çıkarma
+    // 44,55 eklenecek veriler
+    cloneArray.splice(1,0,44,55)
+    cloneArray.forEach((response) => {
+        document.writeln(response);
+    });
+
+    document.writeln("<br/>********<br/>");
+
+    // SLICE (dizilerden alt diziler oluştur)
+   let cloneArray2=array;
+   cloneArray2.slice(1,3).forEach((response) => {
+        document.writeln(response);
+    });
+    document.writeln("<br/>********<br/>");
+    cloneArray2.forEach((response) => {
+        document.writeln(response);
+    })
+}
+    arrayMethod3();
