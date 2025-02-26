@@ -721,4 +721,63 @@ let addEventListenerYtt = () => {
     let buttonId=document.getElementById("addEventYtt");
     buttonId.addEventListener("mouseleave", yttoOnClick);
 }
-addEventListenerYtt()
+// addEventListenerYtt()
+
+// Local storage
+let localStorageYtt = () => {
+    console.log("Local Storage");
+
+        let dataObject = {
+            data1: "YT",
+            data2: "T",
+        }
+    //SET
+    localStorage.setItem("name", dataObject.data1);
+    localStorage.setItem("surname", dataObject.data2);
+
+    // GET
+    const name=localStorage.getItem("name");
+    console.log(name);
+
+    // DELETE
+    localStorage.removeItem("name");
+
+    // ALL DELETE
+    localStorage.clear();
+
+}
+// localStorageYtt()
+
+// DOM
+let yttDom = () => {
+    console.log("DOM");
+    let heading, paragraf1, paragraf2, button;
+    let query1, query2;
+
+    // Heading
+    heading=document.getElementById("ytt_h1");
+    heading.textContent="YTT Heading ID";
+
+    // Paragraf
+    paragraf1=document.getElementsByClassName("ytt_parag")[0];
+    paragraf1.innerHTML="<b><mark> Paragraf Class </mark></b>değiştir.";
+
+    paragraf2=document.getElementsByName("ytt_parag2")[0];
+    paragraf2.innerText="Paragraf Name değiştir.";
+
+    paragraf2=document.getElementsByTagName("p")[2];
+    paragraf2.innerText="Paragraf Tag Name değiştir.";
+    paragraf2.style.color="red";
+    paragraf2.style.fontSize="20px";
+    paragraf2.style.fontFamily="Arial";
+    paragraf2.style.textAlign="center";
+    paragraf2.style.textDecoration="underline";
+
+    // querySelector
+    query1=document.querySelector("#querySelector1");
+    query1.innerText="Query Selector ID";
+
+    query2=document.querySelector(".querySelector2");
+    query2.innerText="Query Selector Class";
+}
+ yttDom()
